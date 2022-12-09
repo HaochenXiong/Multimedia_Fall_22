@@ -1,5 +1,18 @@
 #tbd{
     font-size: 300px;
+    color: yellow;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#intro{
+    font-size: 25px;
     color: white;
     text-align: center;
+    margin: 10px 20%;
+    line-height: 50px;
+}
+
+#hl{
+    color: yellow;
 }
