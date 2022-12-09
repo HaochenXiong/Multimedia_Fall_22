@@ -1,0 +1,152 @@
+@font-face {
+    font-family: retroGaming;
+    src: url("../fonts/retroGaming.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: retroGaming;
+}
+
+.character-container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -60%);
+    /* outline: 1px solid #999999; */
+}
+
+.game-container{
+    position: relative;
+    width: 352px;
+    height: 198px;
+    /* outline: 1px solid #999999; */
+    transform: scale(3) translateX(75%) translateY(60%)
+}
+
+.game-container canvas {
+    image-rendering: pixelated;
+}
+
+#login-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(45%, -55%);
+    display: grid;
+    width: 200px;
+    grid-row-gap: 30px; 
+}
+
+.input {
+    position: relative;
+    width: 180px;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #999999;
+    padding: 20px 10px 5px 10px;
+    outline: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+.input:focus {
+    border-bottom: 1px solid #66c0f4;
+    transition: all 0.5s ease;
+}
+
+[placeholder]::-webkit-input-placeholder{
+    transition: all 0.5s ease;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transform: translateY(-150%); 
+    transition: all 0.5s ease;
+    opacity: 1;
+ }
+
+#eye {
+    position: absolute;
+    margin-left: -25px; 
+    margin-top: 20px; 
+    color: #999999;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#eye:hover {
+    color: #333333;
+    transition: all 0.5s ease;
+}
+
+#btn1 {
+    position: relative;
+    margin-top: 20px;
+    width: 180px;
+    height: 40px; 
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+#btn1:hover {
+    color: #66c0f4;
+}
+
+#btn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #999999;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+#btn1:hover::before {
+    opacity: 0;
+}
+
+#btn1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #66c0f4;
+    border-radius: 50px;
+    opacity: 0;
+    z-index: -1;
+    transform: scaleX(1.1) scaleY(1.3);
+    transition: all 0.5s ease;
+}
+
+#btn1:hover::after {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+#link{
+    color: #999999;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 25px;
+    transition: all 0.5s ease;
+}
+
+#link:hover{
+    color: #66c0f4;
+}
+
+

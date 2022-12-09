@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="character-container">
+        <img src="images/steam/steamLogo.png" alt="Steam Logo" width="200" height="200">
+    </div>
+    <nav id="login-menu">
+        <input class="input" placeholder="EMAIL" type="text" oninput="triggerAnimation()">
+        <section>
+            <input class="input" placeholder="PASSWORD" type="password" id="id_password" maxlength="14">
+            <i class="far fa-eye" id="eye"></i>
+        </section>
+        <button id="btn1" onclick="location.href='pages/steamPage.html'">Sign In</button>
+        <a id="link" href="pages/worldIndex.html">Switch to Steam World</a>
+    <nav>
+    <script>
+        const passwordInput = document.querySelector("#id_password")
+        const eye = document.querySelector("#eye")
+
+        eye.addEventListener('click', function (e) {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password'
+            passwordInput.setAttribute('type', type)
+            this.classList.toggle('fa-eye-slash')
+        });
+    </script>
+</body>
+</html>

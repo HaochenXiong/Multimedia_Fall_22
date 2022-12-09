@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/steamPageStyle.css" type="text/css" rel="stylesheet">
+    <title>Steam</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="steamLogo" src="../images/steam/steamLogo.png" alt="Steam Logo" width="60" height="60" onclick="location.href='../index.html'">
+            <h2>Store &#9660;</h2>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li>
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search expandright" id="searchright" type="search" name="Search Box" placeholder="Search">
+                            <label id="searchButton" for="searchright"><span class="mglass">&#9906;</span></label>
+                        </form>
+                    </div>
+                </li>  
+                <li id="block">|</li>
+                <li>Hi, Robert</li>
+                <li><img class="profile" src="../images/steam/icon.png" alt="Profile Picture" width="60" height="60"></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="game-info">
+            <h1>New Releases</h1>
+            <div class="controls">
+                <button class="prev"><i class="material-icons">
+                    keyboard_arrow_left
+                </i></button>
+                <button class="next"><i class="material-icons">
+                    keyboard_arrow_right 
+                </i></button>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="slider">
+                <section><img class="imgGroup" src="../images/steam/cyberpunk.jpg" alt="Cyberpunk 2077"></section>
+                <section><img class="imgGroup" src="../images/steam/witcher3.png" alt="Witcher 3"></section>
+                <section><img class="imgGroup" src="../images/steam/apex.jpg" alt="Apex Legends"></section>
+                <section><img class="imgGroup" src="../images/steam/godofwar.jpg" alt="God of War"></section>
+                <section><img class="imgGroup" src="../images/steam/deathstranding.jpg" alt="Death Stranding"></section>
+            </div>
+        </div>
+    <main>
+    <script src="../javascripts/steamPage.js"></script>
+</body>
+</html>
